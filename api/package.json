@@ -10,7 +10,6 @@
     "prestart": "npm run clean && npm run build",
     "start": "func start",
     "prisma:seed": "ts-node --transpile-only prisma/seed.ts",
-    "postinstall": "prisma generate",
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
