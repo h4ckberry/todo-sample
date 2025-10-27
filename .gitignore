@@ -1,0 +1,68 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Runtime files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Parcel / PnP
+/.pnp
+.pnp.js
+
+# Build output
+dist/
+build/
+out/
+coverage/
+.cache/
+.vite/
+client/dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables / local secrets
+.env
+.env.*.local
+.env.local
+local.settings.json
+api/local.settings.json
+.local.settings.json
+
+# Prisma (local DB files / query engine artifacts)
+*.db
+prisma/dev.db
+generated/prisma/libquery_engine-*.dylib.node
+
+# VS Code
+.vscode/
+.history/
+
+# macOS
+.DS_Store
+
+# JetBrains IDEs
+.idea/
+
+# Editors
+*.sublime-workspace
+*.sublime-project
+*~
+*.swp
+
+# OS
+Thumbs.db
+
+# Packages / archives
+*.tgz
+*.zip
