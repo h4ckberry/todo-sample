@@ -1,15 +1,16 @@
 {
-  "name": "",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
   "main": "dist/src/functions/*.js",
   "scripts": {
-    "build": "tsc",
+    "build": "prisma generate && tsc",
     "watch": "tsc -w",
     "clean": "rimraf dist",
     "prestart": "npm run clean && npm run build",
     "start": "func start",
     "prisma:seed": "ts-node --transpile-only prisma/seed.ts",
+    "postinstall": "prisma generate",
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
@@ -26,5 +27,8 @@
     "azure-functions-core-tools": "^4.x",
     "rimraf": "^5.0.0",
     "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": "20"
   }
 }
